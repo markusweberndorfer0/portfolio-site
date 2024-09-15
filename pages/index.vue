@@ -16,15 +16,7 @@
                     </div>
                 </div>
                 <div class="shadow-md row-span-3 rounded shadow-sky-950 border-2 border-sky-950">
-                    <h2>Work experience</h2>
-                    <div class="h-[calc(100%-theme('fontSize.lg'))] flex flex-col justify-center">
-                        <ExperienceComponent start="SEP 2024" end="SEP 2024" company="FerRobotics"
-                            role="Software engineer" class="mb-10" />
-                        <ExperienceComponent start="JUN 2024" end="AUG 2024" company="Cloudflight"
-                            role="Software engineer" class="mb-10" />
-                        <ExperienceComponent start="JUN 2023" end="AUG 2023" company="FerRobotics"
-                            role="Software engineer" class="mb-10" />
-                    </div>
+                    <WorkExperienceComponent :companies="companies" />
                 </div>
                 <div
                     class="shadow-md rounded shadow-sky-950 border-2 border-sky-950 text-center flex flex-col justify-center items-center">
@@ -44,8 +36,16 @@
     </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import { Company } from '~/types/company';
 
+const { $directus, $readItems } = useNuxtApp()
+
+const companies = ref((await useAsyncData('companies', () => {
+    return $directus.request($readItems('companies', {
+        fields: ['*', 'technologies.*.*']
+    }));
+})).data.value?.map(el => new Company(el)))
 </script>
 
 <style lang="scss">
