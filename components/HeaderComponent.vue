@@ -1,0 +1,18 @@
+<template>
+    <header class="sticky top-0 h-12 flex justify-between pt-2 pb-2 items-center bg-custom-blue">
+        <a class="text-2xl font-bold" href=".">
+            Weberndorfer.eu
+        </a>
+        <div>
+            <a class="mr-3" href="https://github.com/markusweberndorfer0" target="_blank">
+                <font-awesome-icon icon="fa-brands fa-github" size="xl" alt="github icon" />
+            </a>
+            <a class="mr-3" href="https://www.linkedin.com/in/markus-weberndorfer-0928092a7/" target="_blank">
+                <font-awesome-icon icon="fa-brands fa-linkedin-in" size="xl" alt="linkedin icon" />
+            </a>
+            <a href="mailto:markus@weberndorfer.eu">
+                <font-awesome-icon icon="fa-regular fa-envelope" size="xl" alt="mail/envelope icon" />
+            </a>
+        </div>
+    </header>
+</template>

@@ -1,25 +1,30 @@
 <template>
-    <div>
-        <header class="sticky top-0 h-auto flex justify-between p-2 items-center">
-            <a class="text-2xl font-bold" href=".">
-                Weberndorfer.eu
-            </a>
-            <div>
-                <font-awesome :icon="faAddressBook" />
-                <font-awesome :icon="faGithub" />
-            </div>
-        </header>
-
-        <main class="flex justify-center items-center">
-            <div class="grid grid-rows-3 grid-cols-3 h-[800px] aspect-square p-10 gap-2 shadow-blue-500">
+    <div class="flex items-center ">
+        <main class="flex justify-center items-center w-full">
+            <div class="grid grid-rows-3 grid-cols-3 h-[800px] aspect-square p-5 gap-2 shadow-blue-500">
                 <div class="shadow-md row-span-3 rounded shadow-sky-950 border-2 border-sky-950">
                     <h2>Projects</h2>
                 </div>
                 <div class="shadow-md rounded shadow-sky-950 border-2 border-sky-950">
-                    <h2>Companies</h2>
+                    <h2>Education</h2>
+                    <div>
+                        <fieldset>
+                            <legend>SEP 2021 - JUN 2026</legend>
+                            <h3>HTL Paul-Hahn-Straße</h3>
+                            <span>Information technology</span>
+                        </fieldset>
+                    </div>
                 </div>
                 <div class="shadow-md row-span-3 rounded shadow-sky-950 border-2 border-sky-950">
-                    <h2>School</h2>
+                    <h2>Work experience</h2>
+                    <div class="h-[calc(100%-theme('fontSize.lg'))] flex flex-col justify-center">
+                        <ExperienceComponent start="SEP 2024" end="SEP 2024" company="FerRobotics"
+                            role="Software engineer" class="mb-10" />
+                        <ExperienceComponent start="JUN 2024" end="AUG 2024" company="Cloudflight"
+                            role="Software engineer" class="mb-10" />
+                        <ExperienceComponent start="JUN 2023" end="AUG 2023" company="FerRobotics"
+                            role="Software engineer" class="mb-10" />
+                    </div>
                 </div>
                 <div
                     class="shadow-md rounded shadow-sky-950 border-2 border-sky-950 text-center flex flex-col justify-center items-center">
@@ -28,7 +33,7 @@
                         Weberndorfer
                     </div>
                     <div class="text-lg">
-                        17 y/o
+                        17 years old
                     </div>
                 </div>
                 <div class="shadow-md rounded shadow-sky-950 border-2 border-sky-950">
@@ -36,15 +41,10 @@
                 </div>
             </div>
         </main>
-
-        <footer></footer>
     </div>
 </template>
 
 <script lang="ts">
-
-import { faCircle, faAddressBook } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 </script>
 
@@ -55,5 +55,9 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 h2 {
     @apply text-xl font-bold;
+}
+
+h3 {
+    @apply text-lg font-bold;
 }
 </style>
