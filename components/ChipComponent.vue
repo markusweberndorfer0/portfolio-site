@@ -1,6 +1,6 @@
 <template>
     <a v-if="!!chip" :href="chip.link" target="_blank"
-        class="rounded p-0.5 w-max border-solid border-gray-400 border-[1.5px] pl-[5px] pr-[5px] select-none">
+        class="rounded p-0.5 w-max border-solid border-gray-400 border-[1.5px] pl-[5px] pr-[5px] select-none flex items-center hover:bg-gray-900 transition-all">
         <span>
             <font-awesome-icon :icon="chip.fa_icon" />
             {{ chip.label }}

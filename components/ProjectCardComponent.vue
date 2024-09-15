@@ -13,9 +13,11 @@
         </div>
         <template v-if="!!project.description">
             <hr class="mt-1 mb-1" />
-            <button class="rounded shadow bg-gray-700 pl-[5px] pr-[5px] mt-1">More</button>
+            <button class="rounded shadow bg-gray-700 pl-[5px] pr-[5px] mt-1"
+                @click="$emit('openProjectDescriptionModal', project.id)">More</button>
         </template>
     </div>
+
 </template>
 
 <script setup lang="ts">
@@ -27,6 +29,10 @@ defineProps({
         required: true,
     }
 });
+
+defineEmits([
+    'openProjectDescriptionModal'
+])
 </script>
 
 <style scoped lang="scss">
