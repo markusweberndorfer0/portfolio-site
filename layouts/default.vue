@@ -19,4 +19,20 @@
 .main-min-height {
     min-height: calc(100vh - theme("space.12") - theme("space.8"))
 }
+
+h1 {
+    @apply text-3xl font-bold;
+}
+
+h2 {
+    @apply text-2xl font-bold;
+}
+
+h3 {
+    @apply text-xl font-bold;
+}
+
+a[underline] {
+    @apply underline
+}
 </style>

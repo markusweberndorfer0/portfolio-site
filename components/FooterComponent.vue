@@ -3,7 +3,7 @@
         <div>
             <span class="flex items-center">
                 <font-awesome-icon icon="fa-regular fa-copyright" alt="copyright icon" />
-                &nbsp;Copyright 2024 - {{ new Date().getFullYear() }} by Markus Weberndorfer
+                &nbsp;2024 - {{ new Date().getFullYear() }} Weberndorfer.eu
             </span>
         </div>
         <div>

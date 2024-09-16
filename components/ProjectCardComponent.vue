@@ -1,7 +1,8 @@
 <template>
     <div class="bg-opacity-5 bg-gray-100 p-2 rounded-xl">
         <div class="flex items-center gap-2">
-            <a :href="project.github_link" target="_blank" alt="github url">
+            <a v-if="!!project.github_link" :href="project.github_link" target="_blank" alt="github url"
+                class="hover:opacity-80 transition-all">
                 <font-awesome-icon icon="fa-brands fa-github" size="lg" />
             </a>
             <h3>{{ project.name }}</h3>
@@ -13,8 +14,8 @@
         </div>
         <template v-if="!!project.description">
             <hr class="mt-1 mb-1" />
-            <button class="rounded shadow bg-gray-700 pl-[5px] pr-[5px] mt-1"
-                @click="$emit('openProjectDescriptionModal', project.id)">More</button>
+            <button class="rounded shadow bg-cyan-900 p-1 mt-1 hover:bg-opacity-80"
+                @click="$emit('openProjectDescriptionModal', project.id)">Project description</button>
         </template>
     </div>
 
