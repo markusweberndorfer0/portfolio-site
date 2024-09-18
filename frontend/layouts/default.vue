@@ -14,7 +14,7 @@
 <script setup lang="ts">
 useHead({
     titleTemplate(title) {
-        return title ? `${title} - Markus Weberndorfer` : `Markus Weberndorfer`;
+        return title ? `${title} - Weberndorfer.eu` : `Weberndorfer.eu`;
     },
 })
 </script>

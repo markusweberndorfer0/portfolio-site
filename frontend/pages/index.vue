@@ -59,7 +59,7 @@ const technologies = (await useAsyncData('technologies', () => {
 })).data as Ref<Technology[]>
 
 useHead({
-    title: ""
+    title: "Home"
 })
 </script>
 

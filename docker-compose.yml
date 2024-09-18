@@ -41,7 +41,7 @@ services:
       - uploads:/directus/uploads
       - extensions:/directus/extensions
       - templates:/directus/templates
-      - ./config.json:/directus_config.json
+      - ./directus/config.json:/directus_config.json
     depends_on:
       database:
         condition: service_healthy
@@ -54,7 +54,7 @@ services:
       DB_HOST: "database"
       DB_PORT: "5432"
       DB_DATABASE: "directus"
-      DB_USER: ${DB_USER}
+      DB_USER: "directus"
       DB_PASSWORD: ${DB_PASSWORD}
 
       CACHE_ENABLED: "true"
@@ -69,8 +69,16 @@ services:
 
       # Make sure to set this in production
       # (see https://docs.directus.io/self-hosted/config-options#general)
-      PUBLIC_URL: "http://localhost"
+      PUBLIC_URL: ${DIRECTUS_PUBLIC_URL}
 
     # Environment variables can also be defined in a file (for example `.env`):
     # env_file:
     #	  - .env
+
+  frontend:
+    image: frontend
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      DIRECTUS_URL: "http://directus:8055"
