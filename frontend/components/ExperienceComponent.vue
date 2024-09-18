@@ -4,7 +4,7 @@
         <hr class="mt-1 mb-1" />
         <div>{{ secondary }}</div>
         <div class="uppercase">{{ start?.split(' ')[0].slice(0, 3) }} {{ start?.split(" ")[1] }} &mdash; {{ end }}</div>
-        <div v-if="!!technologies" class="pt-2 pb-1 flex gap-2">
+        <div v-if="!!technologies" class="pt-2 pb-1 flex gap-2 flex-wrap">
             <ChipComponent v-for="chip in technologies" :key="chip.label" :chip="chip" />
         </div>
     </div>
