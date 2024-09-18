@@ -8,4 +8,10 @@ export default defineNuxtConfig({
   build: {
     transpile: ["@fortawesome/vue-fontawesome"],
   },
+  app: {
+    head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+    },
+  },
 });

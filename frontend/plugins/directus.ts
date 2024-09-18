@@ -1,6 +1,9 @@
 import { createDirectus, rest, readItem, readItems } from "@directus/sdk";
 
-const directus = createDirectus("http://localhost:8055").with(rest());
+// For docker development: host.docker.internal
+// For native development: localhost
+
+const directus = createDirectus("http://host.docker.internal/api").with(rest());
 
 export default defineNuxtPlugin(() => {
   return {

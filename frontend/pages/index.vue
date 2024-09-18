@@ -57,6 +57,10 @@ const technologies = (await useAsyncData('technologies', () => {
         fields: ['*']
     }));
 })).data as Ref<Technology[]>
+
+useHead({
+    title: ""
+})
 </script>
 
 <style scoped lang="scss">

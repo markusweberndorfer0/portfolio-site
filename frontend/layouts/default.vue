@@ -11,6 +11,14 @@
     </div>
 </template>
 
+<script setup lang="ts">
+useHead({
+    titleTemplate(title) {
+        return title ? `${title} - Markus Weberndorfer` : `Markus Weberndorfer`;
+    },
+})
+</script>
+
 <style lang="scss">
 .remaining {
     width: calc(calc(100% - 1500px) / 2);
