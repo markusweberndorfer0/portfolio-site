@@ -4,13 +4,13 @@
             <div
                 class="grid md:grid-rows-3 md:grid-cols-3 md:h-[800px] md:aspect-square p-5 gap-2 shadow-blue-500 max-md:w-[350px]">
                 <div class="shadow-md row-span-3 rounded shadow-sky-950 border-2 border-sky-950">
-                    <WorkExperienceComponent :companies="companies" />
+                    <ProjectsComponent :projects="projects" />
                 </div>
                 <div class="shadow-md rounded shadow-sky-950 border-2 border-sky-950">
                     <EducationComponent :schools="schools" />
                 </div>
                 <div class="shadow-md row-span-3 rounded shadow-sky-950 border-2 border-sky-950">
-                    <ProjectsComponent :projects="projects" />
+                    <WorkExperienceComponent :companies="companies" />
                 </div>
                 <div
                     class="shadow-md rounded shadow-sky-950 border-2 border-sky-950 text-center flex flex-col justify-center items-center max-md:-order-2">

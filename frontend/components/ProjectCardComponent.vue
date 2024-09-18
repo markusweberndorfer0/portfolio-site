@@ -14,7 +14,7 @@
         </div>
         <template v-if="!!project.description">
             <hr class="mt-1 mb-1" />
-            <button class="rounded shadow bg-cyan-900 p-1 mt-1 hover:bg-opacity-80"
+            <button class="rounded shadow bg-cyan-900 p-1 mt-1 hover:bg-opacity-80 transition-all"
                 @click="$emit('openProjectDescriptionModal', project.id)">Project description</button>
         </template>
     </div>
