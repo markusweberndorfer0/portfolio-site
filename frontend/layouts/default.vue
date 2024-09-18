@@ -29,15 +29,19 @@ useHead({
 }
 
 h1 {
-    @apply text-3xl font-bold;
+    @apply text-3xl font-bold mb-3;
 }
 
 h2 {
-    @apply text-2xl font-bold;
+    @apply text-2xl font-bold mb-2;
 }
 
 h3 {
-    @apply text-xl font-bold;
+    @apply text-xl font-bold mb-1;
+}
+
+p {
+    @apply mb-1;
 }
 
 a[underline] {

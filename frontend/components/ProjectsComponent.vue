@@ -1,5 +1,5 @@
 <template>
-    <h2 class="sticky top-[48px] bg-custom-blue">Projects</h2>
+    <h2 class="sticky top-[48px] bg-custom-blue text-center">Projects</h2>
     <div v-if="!!projects" class="h-[calc(100%-theme('fontSize.2xl'))] flex flex-col justify-center">
         <div class="overflow-auto mt-2 mb-2">
             <ProjectCardComponent class="[&:not(:first-child)]:mt-4" v-for="project in projects" :key="project.id"
