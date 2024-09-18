@@ -1,75 +1,42 @@
-# Nuxt 3 Minimal Starter
+# Directus config
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Tables
 
-## Setup
+> [!NOTE]
+>
+> - All fields where no data type is specified are Input fields
+> - Asterisks specify fields as  required fields
+> - Directus is creating `id`-fields with autoincrement automatically
 
-Make sure to install the dependencies:
+1. `technologies`
+   1. `id`
+   2. `label`\*
+   3. `fa_icon`\*
+   4. `link`\*
+2. `companies`
+   1. `id`
+   2. `name`\*
+   3. `role`\*
+   4. `technologies` (Many to Many with technologies table)
+   5. `start_date` (Date)\*
+   6. `end_date` (Date)
+3. `schools`
+   1. `id`
+   2. `name`\*
+   3. `branch`\*
+   4. `start_date` (Date)\*
+   5. `end_date` (Date)
+4. `projects`
+   1. `id`
+   2. `github_link`
+   3. `name`\*
+   4. `short_description`\*
+   5. `technologies` (Many to Many with technologies table)
+   6. `description` (WYSIWYG)
 
-```bash
-# npm
-npm install
+> [!TIP]
+>
+> If done right you should now be able to see two intermediate tables (for the Many to Many relations):
+>
+> ![image-20240918083944929](./assets/image-20240918083944929.png)
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

@@ -12,7 +12,7 @@ services:
     volumes:
       - database:/var/lib/postgresql/data
     environment:
-      POSTGRES_USER: ${DB_USER}
+      POSTGRES_USER: "directus"
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_DB: "directus"
     healthcheck:
