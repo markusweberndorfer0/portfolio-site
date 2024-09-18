@@ -9,7 +9,7 @@
         </div>
         <hr class="mt-1 mb-1" />
         <div>{{ project.short_description }}</div>
-        <div v-if="!!project.technologies" class="pt-2 pb-1 flex gap-2">
+        <div v-if="!!project.technologies" class="pt-2 pb-1 flex gap-2 flex-wrap">
             <ChipComponent v-for="chip in project.technologies" :key="chip.label" :chip="chip" />
         </div>
         <template v-if="!!project.description">
