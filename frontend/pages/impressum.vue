@@ -21,6 +21,9 @@
 
 <script setup lang="ts">
 useHead({
-    title: "Impressum"
+    title: "Impressum",
+    htmlAttrs: {
+        lang: "de"
+    }
 })
 </script>

@@ -81,4 +81,4 @@ services:
     ports:
       - "3000:3000"
     environment:
-      DIRECTUS_URL: "http://directus:8055"
+      DIRECTUS_URL: "https://directus.weberndorfer.eu"
