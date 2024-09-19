@@ -3,13 +3,13 @@
         <main class="flex justify-center items-center w-full">
             <div
                 class="grid md:grid-rows-3 md:grid-cols-3 md:h-[800px] md:aspect-square p-5 gap-2 shadow-blue-500 max-md:w-[350px]">
-                <div class="shadow-md row-span-3 rounded shadow-sky-950 border-2 border-sky-950">
+                <div class="shadow-md row-span-3 rounded shadow-sky-950 border-2 border-sky-950 max-md:order-3">
                     <ProjectsComponent :projects="projects" />
                 </div>
-                <div class="shadow-md rounded shadow-sky-950 border-2 border-sky-950">
+                <div class="shadow-md rounded shadow-sky-950 border-2 border-sky-950 max-md:order-2">
                     <EducationComponent :schools="schools" />
                 </div>
-                <div class="shadow-md row-span-3 rounded shadow-sky-950 border-2 border-sky-950">
+                <div class="shadow-md row-span-3 rounded shadow-sky-950 border-2 border-sky-950 max-md:-order-1">
                     <WorkExperienceComponent :companies="companies" />
                 </div>
                 <div
@@ -19,7 +19,7 @@
                         Weberndorfer
                     </div>
                 </div>
-                <div class="shadow-md rounded shadow-sky-950 border-2 border-sky-950 max-md:-order-1">
+                <div class="shadow-md rounded shadow-sky-950 border-2 border-sky-950 max-md:order-1">
                     <TechnologiesComponent :technologies="technologies" />
                 </div>
             </div>

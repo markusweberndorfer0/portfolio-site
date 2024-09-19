@@ -44,7 +44,21 @@ p {
     @apply mb-1;
 }
 
-a[underline] {
-    @apply underline
+/* Scroll bar stylings */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5c5c5c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 </style>
