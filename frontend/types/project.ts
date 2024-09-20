@@ -7,6 +7,7 @@ export class Project {
   public short_description: string;
   public description: string;
   public technologies: Technology[];
+  public order: number | null;
 
   constructor(data: any) {
     this.id = data.id;
@@ -21,5 +22,6 @@ export class Project {
     } catch (e) {
       this.technologies = [];
     }
+    this.order = data.order;
   }
 }

@@ -8,6 +8,7 @@
       1. Tables to create
       2. Make created collections public
    2. Reverse Proxy configuration
+3. Development
 
 ## How 2 install
 
@@ -44,6 +45,7 @@
    4. `technologies` (Many to Many with technologies table)
    5. `start_date` (Date)\*
    6. `end_date` (Date)
+   7. `order` (Integer Input)
 3. `schools`
    1. `id`
    2. `name`\*
@@ -57,6 +59,7 @@
    4. `short_description`\*
    5. `technologies` (Many to Many with technologies table)
    6. `description` (WYSIWYG)
+   7. `order` (Integer Input)
 
 > [!TIP]
 >
@@ -81,3 +84,12 @@ To make the project publicly accessible, you can configure your reverse proxy (t
 
 1. You have to publish port `3000` to a domain, this is the main website
 2. And you have to publish port `8055` to a domain like `directus.<YOURDOMAIN>.com`
+
+## Development
+
+1. A local directus instance isn't necessarily needed, because you can just point the directus URL in the directus SDK plugin settings (`frontend`>`plugins`>`directus.ts`) to your production directus.
+2. To run the frontend in dev-Mode navigate into the `frontend` directory, open a terminal and type `npm run dev`, the used Node version is 20.17.0
+
+   > [!NOTE]
+   >
+   > When running this command the first time, you need to run `npm install` beforehand

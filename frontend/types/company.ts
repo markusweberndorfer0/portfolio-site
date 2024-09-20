@@ -7,6 +7,7 @@ export class Company {
   public start_date: string;
   public end_date: string;
   public technologies: Technology[];
+  public order: number | null;
 
   constructor(data: any) {
     this.id = data.id;
@@ -23,5 +24,6 @@ export class Company {
     } catch (e) {
       this.technologies = [];
     }
+    this.order = data.order;
   }
 }
