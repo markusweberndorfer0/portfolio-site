@@ -15,7 +15,7 @@
                     <WorkExperienceComponent :companies="companies" />
                 </div>
                 <div
-                    class="shadow-md rounded shadow-sky-950 border-2 border-sky-950 text-center flex flex-col justify-center items-center max-md:-order-2 name-animation bg-custom-blue z-[500]">
+                    class="shadow-md rounded shadow-sky-950 border-2 border-sky-950 text-center flex flex-col justify-center items-center max-md:-order-2 name-animation bg-custom-blue z-20">
                     <div class="text-3xl font-bold">
                         Markus<br />
                         Weberndorfer
