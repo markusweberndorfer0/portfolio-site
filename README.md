@@ -1,6 +1,6 @@
 # Portfolio-Site project
 
-## Table of Contents
+## Table ofContents
 
 1. How 2 install
 2. Post-install steps
