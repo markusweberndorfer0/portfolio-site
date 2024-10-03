@@ -139,6 +139,13 @@ useHead({
     }
 }
 
+@media print {
+    .name-animation {
+        background-color: theme("colors.custom-blue");
+        print-color-adjust: exact;
+    }
+}
+
 @media (prefers-reduced-motion) {
     .projects-animation {
         animation: none;

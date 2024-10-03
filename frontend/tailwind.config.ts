@@ -8,6 +8,9 @@ export default {
       colors: {
         "custom-blue": "#062133",
       },
+      screens: {
+        md: "810px",
+      },
     },
   },
   plugins: [],
