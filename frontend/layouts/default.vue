@@ -1,13 +1,16 @@
 <template>
     <div class="min-h-screen bg-sky-950 text-gray-300 flex justify-start">
-        <div class="remaining from-gray-900 to-custom-blue min-h-screen bg-gradient-to-r"></div>
+        <div
+            class="remaining from-gray-900 to-custom-blue min-h-screen bg-gradient-to-r"
+        ></div>
         <div class="w-[1500px] bg-custom-blue pl-3 pr-3 min-h-screen">
             <HeaderComponent class="print:hidden" />
             <slot></slot>
             <FooterComponent class="print:hidden" />
         </div>
-        <div class="remaining from-gray-900 to-custom-blue bg-gradient-to-l">
-        </div>
+        <div
+            class="remaining from-gray-900 to-custom-blue bg-gradient-to-l"
+        ></div>
     </div>
 </template>
 
@@ -16,7 +19,7 @@ useHead({
     titleTemplate(title) {
         return title ? `${title} - Weberndorfer.eu` : `Weberndorfer.eu`;
     },
-})
+});
 </script>
 
 <style lang="scss">
@@ -25,7 +28,7 @@ useHead({
 }
 
 .main-min-height {
-    min-height: calc(100vh - theme("space.12") - theme("space.8"))
+    min-height: calc(100vh - theme('space.12') - theme('space.8'));
 }
 
 h1 {
@@ -44,6 +47,18 @@ p {
     @apply mb-1;
 }
 
+* {
+    @apply cursor-default;
+}
+
+a:hover,
+button:hover {
+    @apply cursor-pointer;
+    & * {
+        @apply cursor-pointer;
+    }
+}
+
 /* Scroll bar stylings */
 ::-webkit-scrollbar {
     width: 5px;
@@ -54,7 +69,6 @@ p {
 ::-webkit-scrollbar-thumb {
     background: #5c5c5c;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 /* Handle on hover */
