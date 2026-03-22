@@ -1,5 +1,3 @@
-import moment from "moment";
-
 export class Project {
   public id: number;
   public github_link: string;
@@ -16,9 +14,8 @@ export class Project {
     this.short_description = data.short_description;
     this.description = data.description;
     try {
-      this.technologies = data.technologies.map(
-        (el: any) => el.technologies_id
-      );
+      this.technologies = (JSON.parse(data.technology_ids) as number[]).map((id) =>
+          data.technologies.find((el: any) => parseInt(el.id) == id));
     } catch (e) {
       this.technologies = [];
     }

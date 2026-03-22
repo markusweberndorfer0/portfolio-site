@@ -1,0 +1,12 @@
+id,label,fa_icon,link
+1,Vue.js,fa-brands fa-vuejs,https://vuejs.org
+2,PHP,fa-brands fa-php,https://www.php.net/
+3,Nextcloud,fa-solid fa-cloud,https://nextcloud.com
+4,Angular,fa-brands fa-angular,https://angular.dev/
+5,Spring Boot,fa-solid fa-leaf,https://spring.io/projects/spring-boot
+6,Electron,fa-solid fa-atom,https://www.electronjs.org/
+7,Typescript,fa-brands fa-js,https://typescriptlang.org
+8,HTML5,fa-brands fa-html5,https://de.wikipedia.org/wiki/HTML5
+9,CSS3,fa-brands fa-css3,https://de.wikipedia.org/wiki/Cascading_Style_Sheets
+10,Kotlin,fa-brands fa-java,https://kotlinlang.org/
+11,Nuxt,fa-brands fa-vuejs,https://nuxt.com/

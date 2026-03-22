@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   pages: true,
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
   css: ["@fortawesome/fontawesome-svg-core/styles.css"],
   build: {
     transpile: ["@fortawesome/vue-fontawesome"],

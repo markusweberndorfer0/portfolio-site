@@ -1,0 +1,5 @@
+name,role,start_date,end_date,order,technology_ids
+Cloudflight,Software engineer,2025-07-01,2025-07-31,1,"[10,4,5]"
+FerRobotics,Software engineer,2024-09-01,2024-09-30,2,"[6,1,2]"
+Cloudflight,Software engineer,2024-07-01,2024-08-30,3,"[4,5,10]"
+FerRobotics,Software engineer,2023-07-01,2023-09-30,4,"[1,2,3]"
